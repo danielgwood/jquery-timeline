@@ -1,0 +1,9 @@
+This jQuery plugin uses the Canvas drawing API introduced in HTML5 to render timeline widgets. The idea is to take some dull input data, such as a table of dates, and transform this into a rich, interactive element with minimal effort.
+
+Features include:
+ * Supports periods as well as events
+ * Scale to years, decades, centuries, milliennia
+ * Scroll by keyboard, mouse regions, custom events
+ * Support for custom event handlers
+ * Customisable appearance and style
+For an exhaustive list, check the wiki.
