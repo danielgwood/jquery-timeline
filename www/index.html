@@ -1,0 +1,159 @@
+<!doctype html>  
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>HTML5/jQuery timeline plugin</title>
+  <meta name="description" content="A plugin for jQuery that renders a neat timeline widget using the HTML5 Canvas API.">
+  <meta name="author" content="Daniel G Wood">
+  
+  <meta property="og:title" content="HTML5/jQuery timeline plugin" />
+  <meta property="og:description" content="A plugin for jQuery that renders a neat timeline widget using the HTML5 Canvas API." />
+  <meta property="og:image" content="TODO" />
+  <link rel="image_src" href="TODO" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+        <h1>HTML5 Timeline</h1>
+        <div id="powered-by">
+            <a href="http://www.w3.org/html/logo/" target="_blank"><img src="images/HTML5_logo.png" height="32" alt="Uses HTML5 Canvas" title="Uses HTML5 Canvas"></a>
+            <span>&plus;</span>
+            <a href="http://jquery.com/" target="_blank"><img src="images/jQuery_logo.png" alt="A plugin for jQuery" title="A plugin for jQuery" height="28"></a>
+        </div>
+    </header>
+    
+    <div id="error">
+        <p>Oh no! Your browser <span id="problem">has JavaScript disabled</span>! No interactive timeline for you.</p>
+        <p id="solution">Either enable JavaScript, or install a more modern browser.</p>
+    </div>
+    
+    <img src="images/fakeTimeline.png" width="1665" id="timeline">
+    
+    <div id="main" class="container_12">
+        <div id="navigation" class="grid_2">
+            <ul>
+                <li><a href="">Overview</a></li>
+                <li><a href="">Example</a></li>
+                <li><a href="">Usage</a></li>
+                <li><a href="">Download</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </div>
+        
+        <div id="content" class="grid_10">
+            <h2>Overview</h2>
+            <p>This jQuery plugin uses the Canvas drawing API introduced in HTML5 to render timeline widgets. The idea is to take some dull input data, such as a table of dates, and transform this into a rich, interactive element with minimal effort.</p>
+            
+            <h3>Features include</h3>
+            <ul>
+                <li>Supports periods as well as events</li>
+                <li>Scale to years, decades, centuries, milliennia</li>
+                <li>Scroll by keyboard, mouse regions, custom events</li>
+                <li>Support for custom event handlers</li>
+                <li>Customisable appearance and style</li>
+            </ul>
+            <p>For an exhaustive list, check the <a href="TODO">wiki</a>.</p>
+            
+            <h3>Roadmap</h3>
+            <p>Here are some things I'd like to do with the plugin:</p>
+            <ul>
+                <li><em class="priority soon">soon</em>Add support for zooming in further</li>
+                <li><em class="priority very-soon">very soon</em>Add support for dates &lt; 100 AD/CE</li>
+                <li>Selective event loading via AJAX</li>
+                <li>Testing/development for mobile devices and iPads.</li>
+            </ul>
+            <p>For more details on what is planned and when, check out the <a href="TODO">wiki</a>.</p>
+            
+            <h2>Usage</h2>
+            <p>These instructions should help you get started with the plugin, as well as how to customise it, and develop on top. If you have a question that isn't covered here, check the <a href="support.html">Support</a> page.</p>
+            
+            <h3>Install</h3>
+            
+            
+            <h3>Tweak</h3>
+            
+            
+            <h3>Extend</h3>
+            
+            
+            <h2>Download</h2>
+            
+            
+            <h3>Changelog</h3>
+            
+            <h2>Support</h2>
+            <p>Some commonly asked questions and their answers can be found on this page. There's also a lot of information on daily usage in the documentation. If you're still stuck, drop me a message and I'll get back to you when I can.</p>
+            
+            <h3>Questions and some answers</h3>
+            <h4>Why are you using jQuery?</h4>
+            <p>Honestly, it's been so long since I last wrote JavaScript without jQuery that I'd have difficulty. More importantly though, jQuery's plugin structure and extensions offered a nice way for me to offer up parts of the plugin to extension and customisation without having to make any blood sacrifices.</p>
+            
+            <h4>Why doesn't this use SVG?</h4>
+            <p>Simple answer: I wanted to try Canvas. Maybe sometime in the future I will want to try SVG?</p>
+            
+            <h4>What alternatives are available?</h4>
+            <p>Most prominent is the <a href="http://www.simile-widgets.org/timeline/" target="_blank">SIMILE timeline widget</a>, which has an active community
+            of developers, and seems to have a tremendous amount of functionality. The <a href="http://www.heml.org/heml-cocoon" target="_blank">HEML-cocoon project</a> can also produce timeline output in SVG form, and there is a <a href="http://www.mediawiki.org/wiki/Extension:WikiTimeLine" target="_blank">MediaWiki extension</a> by Markus Szumovski.</p>
+            
+            <h4>Why does it look so ugly/funny/boring?</h4>
+            <p>Functionality was my main focus for the initial release, and will be for a few minor updates after that I expect. I'm also a programmer rather than a designer. However, I am working on some theming functionality, and welcome design input from those less pixel-challenged than myself.</p>
+            
+            <h4>Why doesn't it do X?</h4>
+            <p>Maybe I haven't got round to it, or haven't thought of it. If you send me a good, detailed suggestion, I will consider adding it at some point. There is a to-do list here. Of course, you are more than welcome to build on top yourself!</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+        
+    <footer>
+        <p>Feel free to use the timeline plugin however you like, or even hack it to pieces and create something new.
+        I'd love to know how you use it!</p>
+        <p><em>HTML5 Timeline</em> is maintained by <a class="author" href="http://www.danielgwood.com" target="_blank">Daniel G. Wood</a>, and is provided under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT Licence.</a></p>
+    </footer>
+  </div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end concatenated and minified scripts-->
+  
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
+  <![endif]-->
+
+  <script>
+   var _gaq = [['_setAccount', 'UA-15405999-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
+</html>
