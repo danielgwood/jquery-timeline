@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>jQuery Timeline plugin</title>
+
+        <!-- Attach stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/screen.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+
+        <!-- Include JavaScripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.timeline.js"></script>
+        
+		<script>
+        $(document).ready(function() {
+        
+            var overrides = {
+                title: $('#timeline caption').text(),
+                fitWidth: true,
+                cvHeight: $('#timeline').height(),
+                initialScale: 'decades',
+                leftScrollElem: 'left',
+                rightScrollElem: 'right',
+                hideDataSource: true
+            };
+        
+            $('#timeline').timeline(overrides);
+        });
+        </script>
+
+	</head>
+	<body>
+	    <div id="header">
+    	    <h1>Example: History of Invention</h1>
+    	    <p>Tests a large event set over a 2000-year period.</p>
+	    </div>
+        <div id="container">
+            <div id="left"></div>
+            <div id="timeline">
+                <table id="timelist-prototype">
+                    <caption>History of Invention</caption>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>0038</td>
+                        <td>Hydraulic-powered bellows invented by Du Shi</td>
+                    </tr>
+                    <tr>
+                        <td>77</td>
+                        <td>First encyclopaedic work by Pliny the Elder</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Paper by Cai Lun</td>
+                    </tr>
+                    <tr>
+                        <td>132</td>
+                        <td>Rudimentary seismometer by Zhang Heng</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td>Rotary fan by Ding Huan</td>
+                    </tr>
+                    <tr>
+                        <td>589</td>
+                        <td>Toilet Paper by Yan Zhitui</td>
+                    </tr>
+                    <tr>
+                        <td>618</td>
+                        <td>Porcelain</td>
+                    </tr>
+                    <tr>
+                        <td>673</td>
+                        <td>Greek fire flamethrower invented by Kallinikos of Heliopolis</td>
+                    </tr>
+                    <tr>
+                        <td>700</td>
+                        <td>Quill pen</td>
+                    </tr>
+                    <tr>
+                        <td>721</td>
+                        <td>Distilled alcohol by Jābir ibn Hayyān</td>
+                    </tr>
+                    <tr>
+                        <td>754</td>
+                        <td>The first Pharmacy in Baghdad</td>
+                    </tr>
+                    <tr>
+                        <td>758</td>
+                        <td>Tar pavement in Baghdad</td>
+                    </tr>
+                    <tr>
+                        <td>763</td>
+                        <td>Psychiatric hospital: Bimaristan in Baghdad</td>
+                    </tr>
+                    <tr>
+                        <td>800</td>
+                        <td>Sine quadrant by Muhammad ibn Mūsā al-Khwārizmī</td>
+                    </tr>
+                    <tr>
+                        <td>857</td>
+                        <td>Under-arm deodorant: Ziryab</td>
+                    </tr>
+                    <tr>
+                        <td>857</td>
+                        <td>Beauty parlour: Ziryab</td>
+                    </tr>
+                    <tr>
+                        <td>873</td>
+                        <td>Programmable machine: Banū Mūsā</td>
+                    </tr>
+                    <tr>
+                        <td>873</td>
+                        <td>Gas mask: Banū Mūsā</td>
+                    </tr>
+                    <tr>
+                        <td>873</td>
+                        <td>Self-feeding oil lamp: Banū Mūsā</td>
+                    </tr>
+                    <tr>
+                        <td>810</td>
+                        <td>Glass from stones: Abbas Ibn Firnas</td>
+                    </tr>
+                    <tr>
+                        <td>827</td>
+                        <td>Mechanical singing bird automaton: Al-Ma'mun</td>
+                    </tr>
+                    <tr>
+                        <td>875</td>
+                        <td>Hang glider: Abbas Ibn Firnas</td>
+                    </tr>
+                    <tr>
+                        <td>887</td>
+                        <td>Metronome: Abbas Ibn Firnas</td>
+                    </tr>
+                    <tr>
+                        <td>904</td>
+                        <td>Fire Arrow in China</td>
+                    </tr>
+                    <tr>
+                        <td>919</td>
+                        <td>Double-piston flamethrower in China</td>
+                    </tr>
+                    <tr>
+                        <td>953</td>
+                        <td>Fountain pen: Al-Muizz Lideenillah of Egypt</td>
+                    </tr>
+                    <tr>
+                        <td>989</td>
+                        <td>Multidomed church</td>
+                    </tr>
+                    <tr>
+                        <td>994</td>
+                        <td>Astronomical sextant: Abu-Mahmud al-Khujandi</td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td>Ligatures by Abu al-Qasim al-Zahrawi</td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td>Adhesive plaster: Abu al-Qasim</td>
+                    </tr>
+                    <tr>
+                        <td>1020</td>
+                        <td>Heliocentric astrolabe: Al-Sijzi[</td>
+                    </tr>
+                    <tr>
+                        <td>1048</td>
+                        <td>Orthographical astrolabe: Abū Rayhān al-Bīrūnī</td>
+                    </tr>
+                    <tr>
+                        <td>1021</td>
+                        <td>Magnifying glass: Ibn al-Haytham</td>
+                    </tr>
+                    <tr>
+                        <td>1021</td>
+                        <td>Pinhole camera: Ibn al-Haytham</td>
+                    </tr>
+                    <tr>
+                        <td>1038</td>
+                        <td>Flywheel invented by Ibn Bassal in Al-Andalus</td>
+                    </tr>
+                    <tr>
+                        <td>1041</td>
+                        <td>Movable type printing press: Bi Sheng in China</td>
+                    </tr>
+                    <tr>
+                        <td>1044</td>
+                        <td>Hand grenade: Zhen Tian Lei in China</td>
+                    </tr>
+                    <tr>
+                        <td>1088</td>
+                        <td>Mechanical clock by Su Song</td>
+                    </tr>
+                    <tr>
+                        <td>1100</td>
+                        <td>Framed bead abacus in China</td>
+                    </tr>
+                    <tr>
+                        <td>1126</td>
+                        <td>Rocket: Li Gang in China</td>
+                    </tr>
+                    <tr>
+                        <td>1200</td>
+                        <td>Glass mirror in Europe</td>
+                    </tr>
+                    <tr>
+                        <td>1232</td>
+                        <td>Rocket launcher in China</td>
+                    </tr>
+                    <tr>
+                        <td>1260</td>
+                        <td>Explosive gunpowder in Egypt</td>
+                    </tr>
+                    <tr>
+                        <td>1274</td>
+                        <td>Siege cannon: Abu Yaqub Yusuf</td>
+                    </tr>
+                    <tr>
+                        <td>1275</td>
+                        <td>Torpedo invented by Hasan al-Rammah of Syria</td>
+                    </tr>
+                    <tr>
+                        <td>1297</td>
+                        <td>Wooden movable type printing: Wang Zhen of China</td>
+                    </tr>
+                    <tr>
+                        <td>1350</td>
+                        <td>Rope bridge in Peru</td>
+                    </tr>
+                    <tr>
+                        <td>1355</td>
+                        <td>Multistage rocket: Jiao Yu and Liu Ji</td>
+                    </tr>
+                    <tr>
+                        <td>1400</td>
+                        <td>Planetary analog computer: Jamshīd al-Kāshī</td>
+                    </tr>
+                    <tr>
+                        <td>1405</td>
+                        <td>Treasure ship: Zheng He</td>
+                    </tr>
+                    <tr>
+                        <td>1430</td>
+                        <td>Vodka: Isidore in Russia</td>
+                    </tr>
+                    <tr>
+                        <td>1450</td>
+                        <td>Alphabetic movable type printing press: Johannes Gutenberg</td>
+                    </tr>
+                    <tr>
+                        <td>1451</td>
+                        <td>Concave lens for eyeglasses: Nicholas of Cusa</td>
+                    </tr>
+                    <tr>
+                        <td>1494</td>
+                        <td>Double-entry bookkeeping system: Luca Pacioli</td>
+                    </tr>
+                    <tr>
+                        <td>1498</td>
+                        <td>Bristle toothbrush: Hongzhi Emperor</td>
+                    </tr>
+                    <tr>
+                        <td>1500</td>
+                        <td>Ball bearing invented by Leonardo Da Vinci</td>
+                    </tr>
+                    <tr>
+                        <td>1540</td>
+                        <td>Ether: Valerius Cordus</td>
+                    </tr>
+                    <tr>
+                        <td>1551</td>
+                        <td>Steam turbine: Taqi al-Din in Ottoman Egypt</td>
+                    </tr>
+                    <tr>
+                        <td>1565</td>
+                        <td>Pencil invented by Conrad Gesner</td>
+                    </tr>
+                    <tr>
+                        <td>1579</td>
+                        <td>Prefabricated home: Akbar the Great</td>
+                    </tr>
+                    <tr>
+                        <td>1592</td>
+                        <td>Ironclad Warship: Yi Sun-sin</td>
+                    </tr>
+                    <tr>
+                        <td>1596</td>
+                        <td>Water closet: John Harrington</td>
+                    </tr>
+                    <tr>
+                        <td>1608</td>
+                        <td>Telescope invented by Hans Lippershey, Zacharias Janssen, Jacob Metius</td>
+                    </tr>
+                    <tr>
+                        <td>1610</td>
+                        <td>Flintlock: Marin le Bourgeoys</td>
+                    </tr>
+                    <tr>
+                        <td>1620</td>
+                        <td>Slide rule: William Oughtred</td>
+                    </tr>
+                    <tr>
+                        <td>1623</td>
+                        <td>Automatic calculator: Wilhelm Schickard</td>
+                    </tr>
+                    <tr>
+                        <td>1631</td>
+                        <td>Vernier scale devised by Pierre Vernier</td>
+                    </tr>
+                    <tr>
+                        <td>1642</td>
+                        <td>Adding machine: Blaise Pascal</td>
+                    </tr>
+                    <tr>
+                        <td>1643</td>
+                        <td>Barometer: Evangelista Torricelli</td>
+                    </tr>
+                    <tr>
+                        <td>1645</td>
+                        <td>Vacuum pump: Otto von Guericke</td>
+                    </tr>
+                    <tr>
+                        <td>1657</td>
+                        <td>Pendulum clock: Christiaan Huygens</td>
+                    </tr>
+                    <tr>
+                        <td>1672</td>
+                        <td>Steam car: Ferdinand Verbiest</td>
+                    </tr>
+                    <tr>
+                        <td>1679</td>
+                        <td>Pressure cooker: Denis Papin</td>
+                    </tr>
+                    <tr>
+                        <td>1698</td>
+                        <td>Steam engine powered water pump invented by Thomas Savery</td>
+                    </tr>
+                    <tr>
+                        <td>1700</td>
+                        <td>Bartolomeo Cristofori invents the Piano</td>
+                    </tr>
+                    <tr>
+                        <td>1700</td>
+                        <td>Water-based central heating invented in Russia</td>
+                    </tr>
+                    <tr>
+                        <td>1709</td>
+                        <td>Iron smelting using coke: Abraham Darby I</td>
+                    </tr>
+                    <tr>
+                        <td>1711</td>
+                        <td>Tuning fork: John Shore</td>
+                    </tr>
+                    <tr>
+                        <td>1712</td>
+                        <td>Steam piston engine: Thomas Newcomen</td>
+                    </tr>
+                    <tr>
+                        <td>1714</td>
+                        <td>Mercury thermometer: Daniel Gabriel Fahrenheit</td>
+                    </tr>
+                    <tr>
+                        <td>1717</td>
+                        <td>Mechanic slide rest invented by Andrey Nartov</td>
+                    </tr>
+                    <tr>
+                        <td>1731</td>
+                        <td>Octant: John Hadley, Thomas Godfrey</td>
+                    </tr>
+                    <tr>
+                        <td>1732</td>
+                        <td>Cast iron dome: Akinfiy Demidov</td>
+                    </tr>
+                    <tr>
+                        <td>1737</td>
+                        <td>Marine chronometer: John Harrison</td>
+                    </tr>
+                    <tr>
+                        <td>1739</td>
+                        <td>Ice palace: Anna of Russia and architect Pyotr Yeropkin</td>
+                    </tr>
+                    <tr>
+                        <td>1742</td>
+                        <td>Franklin stove: Benjamin Franklin</td>
+                    </tr>
+                    <tr>
+                        <td>1752</td>
+                        <td>Lightning rod: Benjamin Franklin</td>
+                    </tr>
+                    <tr>
+                        <td>1754</td>
+                        <td>Coaxial rotor / Model helicopter: Mikhail Lomonosov</td>
+                    </tr>
+                    <tr>
+                        <td>1762</td>
+                        <td>Off-axis reflecting telescope: Mikhail Lomonosov</td>
+                    </tr>
+                    <tr>
+                        <td>1764</td>
+                        <td>Spinning jenny: James Hargreaves/Thomas Highs</td>
+                    </tr>
+                    <tr>
+                        <td>1766</td>
+                        <td>Ivan Polzunov invents the two-cylinder engine</td>
+                    </tr>
+                    <tr>
+                        <td>1769</td>
+                        <td>Water frame: Richard Arkwright/Thomas Highs</td>
+                    </tr>
+                    <tr>
+                        <td>1776</td>
+                        <td>Steamboat invented by Claude de Jouffroy</td>
+                    </tr>
+                    <tr>
+                        <td>1776</td>
+                        <td>Watt steam engine: James Watt</td>
+                    </tr>
+                    <tr>
+                        <td>1777</td>
+                        <td>Circular saw: Samuel Miller</td>
+                    </tr>
+                    <tr>
+                        <td>1780</td>
+                        <td>Iron-cased rocket: Tipu Sultan in India</td>
+                    </tr>
+                    <tr>
+                        <td>1783</td>
+                        <td>Hot air balloon: Montgolfier brothers</td>
+                    </tr>
+                    <tr>
+                        <td>1784</td>
+                        <td>Bifocals: Benjamin Franklin</td>
+                    </tr>
+                    <tr>
+                        <td>1785</td>
+                        <td>Automatic flour mill: Oliver Evans</td>
+                    </tr>
+                    <tr>
+                        <td>1791</td>
+                        <td>Artificial teeth: Nicholas Dubois De Chemant</td>
+                    </tr>
+                    <tr>
+                        <td>1798</td>
+                        <td>Vaccination by Edward Jenner</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="right"></div>
+        </div>
+	</body>
+</html>

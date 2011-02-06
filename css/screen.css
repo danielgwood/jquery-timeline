@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0; /* allows full-width timelines */
+}
+
+div#header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+div#container {
+    position: relative;
+}
+
+div#left {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 30px;
+    height: 400px; /* 60 more than #timeline height - drop shadow and a larger hit target */
+    background: url('../img/left-fade.png') repeat-y left top;
+}
+
+div#right {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    width: 30px;
+    height: 400px; /* 60 more than #timeline height - drop shadow and a larger hit target */
+    background: url('../img/right-fade.png') repeat-y left top;
+}
+
+div#timeline {
+    height: 340px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #bbb;
+    background-color: #fafafa;
+    -moz-box-shadow: 0 0 50px #ddd;
+    -webkit-box-shadow: 0 0 50px #ddd;
+    box-shadow: 0 0 50px #ddd;
+}
+
+div#actions {
+    display: none;
+    margin: 50px auto;
+    width: 960px;
+}
+
+div#actions div.item {
+    margin: 0 10px;
+    width: 300px;
+    float: left;
+    display: inline;
+    background-color: #f4f4f4;
+    height: 140px;
+    border-radius: 6px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+}
+
+h1 span.small {
+    font-size: 0.8em;
+}
